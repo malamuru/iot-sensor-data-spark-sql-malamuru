@@ -1,4 +1,4 @@
-<h1 align="center">🌡️ IoT Sensor Data Analysis using Apache Spark SQL</h1>
+<h1 align="center"> IoT Sensor Data Analysis using Apache Spark SQL</h1>
 
 <h3 align="center">
 Big Data Analytics Project | PySpark | Spark SQL | Data Engineering
@@ -16,7 +16,7 @@ It demonstrates how large-scale sensor data can be processed using **distributed
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - 📥 Data ingestion and schema exploration using PySpark  
 - 🌡️ Filtering and validation of sensor readings  
