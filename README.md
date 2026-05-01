@@ -39,10 +39,59 @@ It demonstrates how large-scale sensor data can be processed using **distributed
 
 ## 📂 Project Structure
 
-```txt
-├── sensor_data.csv
-├── task1.py   # Data loading & exploration
-├── task2.py   # Filtering & aggregation
-├── task3.py   # Time-based analysis
-├── task4.py   # Window functions & ranking
-├── task5.py   # Pivot table analysis
+- sensor_data.csv
+- task1.py # Data loading & exploration
+- task2.py # Filtering & aggregation
+- task3.py # Time-based analysis
+- task4.py # Window functions & ranking
+- task5.py # Pivot table analysis
+
+---
+
+## 📊 Project Structure
+
+| Column        | Description |
+|--------------|------------|
+| sensor_id    | Unique sensor identifier |
+| timestamp    | Time of reading |
+| temperature  | Temperature (°C) |
+| humidity     | Humidity (%) |
+| location     | Sensor location |
+| sensor_type  | Type of sensor |
+
+---
+
+## 🔍 Analysis Performed
+
+### 📌 Data Exploration
+- Loaded dataset into Spark DataFrame  
+- Explored schema and distinct locations  
+
+### 📌 Filtering & Aggregation
+- Removed out-of-range temperature values  
+- Calculated average temperature and humidity by location  
+
+### 📌 Time-Based Analysis
+- Extracted hour from timestamp  
+- Analyzed hourly temperature trends  
+
+### 📌 Ranking Analysis
+- Used **DENSE_RANK()** to rank sensors by temperature  
+- Identified top sensors  
+
+### 📌 Pivot Analysis
+- Created pivot tables (location vs hour)  
+- Compared temperature trends across locations  
+
+---
+
+## ⚙️ How to Run
+
+```bash
+pip install pyspark
+
+python task1.py
+python task2.py
+python task3.py
+python task4.py
+python task5.py
